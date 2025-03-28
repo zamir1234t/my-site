@@ -83,3 +83,17 @@ body{
     width: 40px;
    }
 }
+
+
+details {
+  max-height: 2em; 
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+details[open] {
+  max-height: 200px; 
+  overflow-y: auto; 
+  border: 1px solid #ccc; 
+  padding: 5px;
+}
